@@ -1,0 +1,132 @@
+.myCart {
+  background-color: var(--fashion-outer-background);
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  column-gap: 1rem;
+  /* min-height: 100vh; */
+  box-sizing: border-box;
+  color: #fff;
+}
+.myCart-products,
+.myCart-details {
+  background-color: var(--menu-background);
+}
+.myCart-details {
+  align-self: flex-start;
+}
+.myCart-name,
+.products-detail-name {
+  padding: 1.8rem 3rem;
+  font-size: 2rem;
+  border-bottom: 2px solid var(--fashion-outer-background);
+}
+
+.products-info {
+  padding: 2rem 3rem;
+  /* padding-top: 2rem; */
+  display: flex;
+  gap: 1.5rem;
+}
+
+.product-img {
+  align-self: center;
+  width: 15rem;
+}
+.product-img img {
+  width: 100%;
+}
+
+.product-info {
+  padding-top: 2rem;
+}
+.product-brand {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #969490;
+}
+.product-description {
+  padding-top: 1rem;
+  font-size: 1.6rem;
+  color: #d3cfca;
+}
+.product-seller {
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  color: #969490;
+}
+.product-price {
+  padding-top: 1.6rem;
+  font-size: 1.8rem;
+  color: #d3cfca;
+}
+.product-decision {
+  padding-top: 3rem;
+  display: flex;
+  font-size: 1.8rem;
+  gap: 3rem;
+}
+.product-decision a {
+  font-size: 1.8rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ----------details----------- */
+/* ----------details----------- */
+.green-text {
+  color: rgb(119 201 123);
+}
+
+.products-details {
+  padding: 1rem 3rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.products-detail-total-price,
+.products-detail-delivery-fee,
+.products-detail-discount-price,
+.detail-sum-amt {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+}
+
+.detail-sum-amt {
+  padding: 3rem 0;
+  border-top: 1px solid dimgrey;
+}
+
+.detail-delivery {
+  width: 13rem;
+  /* background-color: wheat; */
+}
+@media screen and (max-width: 730px) {
+  .myCart {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 486px) {
+  .product-info {
+    padding-top: 0;
+  }
+  .product-description,
+  .product-price {
+    font-size: 1.4rem;
+  }
+  .product-seller {
+    padding-top: 1rem;
+  }
+  .product-decision {
+    padding-top: 2rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .product-decision a {
+    font-size: 1.2rem;
+  }
+}
